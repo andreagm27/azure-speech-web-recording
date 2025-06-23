@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Azure Speech Web App</title>
+</head>
+<body>
+    <h1>Azure Speech Web Interface</h1>
+
+    <h2>🎤 Record your voice</h2>
+    <button id="startBtn">Start Recording</button>
+    <button id="stopBtn" disabled>Stop Recording</button>
+    <button id="uploadBtn" disabled>Upload & Transcribe</button>
+    <p id="recognizedText"></p>
+
+    <h2>🗣 Text to Speech</h2>
+    <form action="/text-to-speech" method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Enter text..."></textarea><br>
+        <input type="submit" value="Synthesize">
+    </form>
+
+    <script src="/static/js/recorder.js"></script>
+</body>
+</html>
