@@ -7,8 +7,8 @@ import time
 
 app = Flask(__name__)
 
-AZURE_KEY = "4fff"  # Replace with your actual Azure key
-AZURE_REGION = "westeurope"
+AZURE_KEY = "YOUR_KEY"
+AZURE_REGION = "YOUR_REGION"
 
 @app.route('/')
 def index():
